@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namesapce :api do
-    
+  namesapce :api, defaults: { format: :json } do
+
   end
 end
