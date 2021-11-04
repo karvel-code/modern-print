@@ -1,7 +1,8 @@
 class Category < ApplicationRecord
 
-    has_many :products
+    has_many :products, through: :sub_categories
+    has_many :sub_categories
 
-    enum supplies: [:schoolSupplies, :officeSupplies, :motivational]
+    enum categoryName: [:schoolSupplies, :officeSupplies, :motivational]
 
 end

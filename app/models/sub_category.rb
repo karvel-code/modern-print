@@ -1,6 +1,7 @@
 class SubCategory < ApplicationRecord
     
+    belongs_to :category
     has_many :products
 
-    enum grade: [:gradeOne, :gradeTwo, :gradeThree, :gradeFour, :gradeFive, :gradeSix]
+    enum subCategoryName: [:gradeOne, :gradeTwo, :gradeThree, :gradeFour, :gradeFive, :gradeSix, :officeSupplies, :motivational]
 end
