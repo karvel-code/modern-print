@@ -5,6 +5,8 @@ class CreateOrders < ActiveRecord::Migration[6.1]
       t.string :customerLastName
       t.string :customerEmailAddress
       t.string :customerPhone
+      t.string :orderNumber
+      t.integer :productId
       t.integer :deliveryOption
 
       t.timestamps
